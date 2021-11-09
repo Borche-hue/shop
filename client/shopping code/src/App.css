@@ -1,0 +1,321 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");s
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    z-index: 1;
+    width: 5%;
+    display: flex;
+    flex-direction: row;
+    border-right: 5px solid rgb(233, 227, 227);
+    transition: 0.4s;
+    height: 100vh;
+}
+
+.sidebar-expand {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    border-right: 5px solid rgb(233, 227, 227);
+    transition: 0.4s;
+}
+
+
+.sidebarIconButton {
+    background: none;
+    outline: none;
+    border: none;
+    height: 10px;
+}
+
+.products {
+    width: 100%;
+    margin-left: 60px;
+}
+
+.category-links {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-links a{
+    margin-bottom: 15px;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+.categories {
+    margin-right: 10px;
+}
+
+.category-links a:hover {
+    background-color: rgb(223, 219, 219);
+}
+
+.category-links i {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.sidebar-add iframe {
+    position: sticky;
+    margin-top: 50px;
+}
+
+.navbar {
+    z-index: 1;
+    border-bottom: 5px solid rgb(233, 227, 227);
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.cart-text {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    font-size: 18px;
+    margin-left: -45px;
+}
+
+.NmbItemsInCart {
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}
+
+.cart-number-items {
+    height: 50px;
+    margin-top: -20px;
+}
+
+.nmb-label {
+    position: relative;
+}
+
+.bi-cart4 {
+    margin-left: 100px;
+    z-index: -1;
+    position: absolute;
+}
+
+.cart-link {
+    color: black;
+    background-color: none;
+}
+
+
+.link-cart {
+    color: black;
+}
+
+.buttons {
+    margin-left: 260px;
+}
+
+.btn-man, .btn-woman {
+    border: 1px solid rgb(165, 143, 143);
+    outline: none;
+    color: white;
+    background-color: black;
+    border-radius: 9px;
+
+    font-size: 13px;
+    width: 100px;
+    text-align: center;
+    padding: 15px;
+}
+
+.btn-man:hover, .btn-woman:hover{
+    background-color: rgb(51, 49, 49);
+}
+
+.search {
+    font-size: 15px;
+    outline: none;
+    margin-left: -100px;
+    width: 250px;
+    padding: 13px;
+    border-radius: 7px;
+    border: 2px solid rgb(25, 25, 248);
+}
+
+.bi-search {
+    z-index: auto;
+    margin-left: -30px;
+}
+
+.search:focus {
+    border: 2px solid rgb(245, 60, 14);
+}
+
+
+.item {
+    margin: 40px 30px 40px 40px;
+    width: 19%;
+    height: 270px;
+}
+
+.item img{
+    width: 220px;
+    height: 220px
+}
+
+
+.item-image:hover {
+    z-index: 99;
+    width: 280px;
+    height: 300px;
+    cursor: zoom-in;
+    transition: 0.4 ease-out;
+}
+
+.details {
+    margin-top: 10px;
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.addtocart {
+    margin-left: 70px;
+}
+
+.items-in-cart {
+    top: 180px;
+    position: absolute;
+    z-index: 1;
+    margin-left: -200px;
+    background-color: silver;
+    border-radius: 15px;
+}
+
+.item-in-cart {
+    padding: 20px;
+    border-bottom: 1px solid rgb(117, 115, 115);
+}
+
+.items-in-cart button {
+    margin:0 auto;
+}
+
+.itemInCart {
+    width: 250px;
+    height: 250px;
+}
+
+.total {
+    text-decoration: underline;
+}
+
+.login{
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 2;
+    top: 20%;
+    background-color: silver;
+    height: 60%;
+    left: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+.login h3 {
+    font-size: 40px;
+    color: white;
+    margin: -30px 0 30px 40px;
+}
+
+
+.login input{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    margin: 0 auto 20px auto;
+    outline: none;
+    border-width: 0 0 2px;
+    border-color: blue;
+    color: white;
+    background-color: silver;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.login input::placeholder{
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.login input:focus {
+    height: 60px;
+    transition: 0.4s;
+}
+
+.login button {
+    margin: 0 auto 30px;
+    text-align: center;
+    height: 45px;
+    font-size: 24px;
+}
+
+.continueButton {
+    background: none;
+    outline: none;
+    border: none;
+    color: blue;
+}
+
+.loginButton {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
+.login-container {
+    margin-left: 40px;
+}
+
+.close {
+    margin-top: -100px;
+    margin-right: -15px;
+}
+
+.close button {
+    margin-top: 35px;
+}
+
+.close-button {
+    font-size: 40px;
+    width: 48px;
+    height: 64px;
+    background: red;
+    outline: none;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
